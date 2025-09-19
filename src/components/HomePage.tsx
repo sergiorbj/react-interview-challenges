@@ -14,6 +14,12 @@ const challenges: Challenge[] = [
     title: 'Progress Bar',
     description: 'An animated progress bar that completes in 3 seconds when the button is clicked.',
     difficulty: 'Easy'
+  },
+  {
+    id: 'checklist',
+    title: 'Checklist',
+    description: 'A list of itens that you can add or remove.',
+    difficulty: 'Easy'
   }
 ];
 

@@ -1,0 +1,21 @@
+.checklist-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+.checklist-container {
+    width: 50%;
+    height: auto;
+    background: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 15px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
