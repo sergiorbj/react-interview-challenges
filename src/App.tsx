@@ -3,6 +3,8 @@ import HomePage from './components/HomePage'
 import ProgressBar from './components/ProgressBar'
 import './App.css'
 import { Checklist } from './components/Checklist'
+import { FilterList } from './components/FilterList'
+import { DebouncedSearch } from './components/DebouncedSearch'
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/challenge/progress-bar" element={<ProgressBar />} />
         <Route path="/challenge/checklist" element={<Checklist />} />
+        <Route path="/challenge/filter-list" element={<FilterList />} />
+        <Route path="/challenge/debounced-search" element={<DebouncedSearch />} />
       </Routes>
     </Router>
   )

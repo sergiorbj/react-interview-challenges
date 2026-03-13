@@ -1,0 +1,43 @@
+.filterlist-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.filterlist-container {
+  width: 50%;
+  height: auto;
+  background: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 40px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.active-filter button {
+  background: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.no-results {
+  color: #888;
+  font-style: italic;
+}

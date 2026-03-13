@@ -8,25 +8,37 @@ function Checklist() {
 
   const addItemList = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const value = e.currentTarget.todo.value;
 
-    setList((prev) => [...prev, value]);
+    const todoItem = e.currentTarget.todoItem.value;
+
+    setList((prev) => [...prev, todoItem]);
+
     e.currentTarget.reset();
+  };
+
+  const removeItemList = (item: string) => () => {
+    setList((prev) => prev.filter((listItem) => listItem !== item));
   };
 
   return (
     <div className="checklist-wrapper">
       <div className="checklist-container">
         <ul>
+          <h2>Daily Routine</h2>
           {list.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>
+              {item}{" "}
+              <button type="button" onClick={removeItemList(item)}>
+                X
+              </button>
+            </li>
           ))}
         </ul>
 
         <form onSubmit={addItemList}>
-          <span>Put another todo on the list: </span>
-          <input type="text" name="todo" />
-          <button type="submit">ADD</button>
+          <span>Put your next activity:</span>
+          <input type="text" name="todoItem"></input>
+          <button type="submit"> ADD </button>
         </form>
       </div>
     </div>

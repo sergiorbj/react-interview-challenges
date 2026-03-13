@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './ProgressBar.css';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./ProgressBar.css";
 
 export default function ProgressBar() {
   const [progress, setProgress] = useState(0);
@@ -46,28 +46,29 @@ export default function ProgressBar() {
   return (
     <div className="progress-bar-container">
       <header className="challenge-header">
-        <Link to="/" className="back-link">← Back to Challenges</Link>
+        <Link to="/" className="back-link">
+          ← Back to Challenges
+        </Link>
         <h1>🎯 Challenge: Progress Bar</h1>
         <p>Implement a progress bar that animates from 0% to 100% in 3 seconds</p>
       </header>
 
       <div className="progress-demo">
-        <div className='progress-bar'>
-            <div className='progress-bar-fill' style={{width: `${progress}%`}}>
-            </div>
+        <div style={{ width: "400px", height: "15px" }}>
+          <div style={{ width: `${progress}%`, height: "100%", backgroundColor: "black" }}></div>
         </div>
 
-        <div className='progress-bar-label'>
-          {progress}%
-        </div>
+        <div className="progress-bar-label">{progress}%</div>
 
-        <div className='progress-bar-buttons'>
-          <button onClick={handleStart}>Start</button>
-          <button onClick={handleReset}>Reset</button>
+        <div className="progress-bar-buttons">
+          <button type="button" onClick={handleStart}>
+            Start
+          </button>
+          <button type="button" onClick={handleReset}>
+            Reset
+          </button>
         </div>
-        
       </div>
-
     </div>
   );
 }

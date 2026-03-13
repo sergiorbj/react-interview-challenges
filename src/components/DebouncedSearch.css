@@ -1,0 +1,67 @@
+.debounce-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.debounce-container {
+  width: 50%;
+  height: auto;
+  background: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.debounce-input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.debounce-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #fff3e0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+.debounce-stat {
+  font-family: monospace;
+}
+
+.no-results {
+  color: #888;
+  font-style: italic;
+}
+
+.debounce-log {
+  margin-top: 15px;
+  background: #263238;
+  color: #a5d6a7;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  width: 80%;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.log-entry {
+  padding: 2px 0;
+}

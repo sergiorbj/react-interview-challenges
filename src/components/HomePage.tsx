@@ -20,6 +20,18 @@ const challenges: Challenge[] = [
     title: 'Checklist',
     description: 'A list of itens that you can add or remove.',
     difficulty: 'Easy'
+  },
+  {
+    id: 'filter-list',
+    title: 'Filter List',
+    description: 'A fruit list with an uncontrolled input filter using form submit.',
+    difficulty: 'Easy'
+  },
+  {
+    id: 'debounced-search',
+    title: 'Debounced Search',
+    description: 'A search input with debounce that delays filtering until the user stops typing.',
+    difficulty: 'Medium'
   }
 ];
 
