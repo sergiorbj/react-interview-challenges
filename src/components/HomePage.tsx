@@ -32,6 +32,12 @@ const challenges: Challenge[] = [
     title: 'Debounced Search',
     description: 'A search input with debounce that delays filtering until the user stops typing.',
     difficulty: 'Medium'
+  },
+  {
+    id: 'throttle-debounce',
+    title: 'Throttle & Debounce',
+    description: 'Throttled confetti button (5s cooldown) and debounced text input (500ms delay).',
+    difficulty: 'Medium'
   }
 ];
 

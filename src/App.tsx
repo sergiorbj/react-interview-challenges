@@ -5,6 +5,7 @@ import './App.css'
 import { Checklist } from './components/Checklist'
 import { FilterList } from './components/FilterList'
 import { DebouncedSearch } from './components/DebouncedSearch'
+import { ThrottleDebounce } from './components/ThrottleDebounce'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/challenge/checklist" element={<Checklist />} />
         <Route path="/challenge/filter-list" element={<FilterList />} />
         <Route path="/challenge/debounced-search" element={<DebouncedSearch />} />
+        <Route path="/challenge/throttle-debounce" element={<ThrottleDebounce />} />
       </Routes>
     </Router>
   )
