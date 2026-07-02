@@ -38,6 +38,12 @@ const challenges: Challenge[] = [
     title: 'Throttle & Debounce',
     description: 'Throttled confetti button (5s cooldown) and debounced text input (500ms delay).',
     difficulty: 'Medium'
+  },
+  {
+    id: 'product-list',
+    title: 'Product List (Debug)',
+    description: 'Fix a broken sort button and calculate the total value of the filtered products.',
+    difficulty: 'Medium'
   }
 ];
 
